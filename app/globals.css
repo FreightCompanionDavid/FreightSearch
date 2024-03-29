@@ -4,6 +4,12 @@
 
 @layer base {
   :root {
+    /* Existing color definitions */
+  
+    /* New theme colors based on the freightcompanionlogo.png */
+    --dark-blueish: rgb(38, 49, 74);
+    --light-grey: rgb(252, 252, 252);
+    --warm-beige: rgb(178, 156, 123);
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --muted: 240 4.8% 95.9%;
