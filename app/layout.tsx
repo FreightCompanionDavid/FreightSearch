@@ -10,15 +10,15 @@ import { Header } from '@/components/header';
 import { Providers } from '@/components/providers';
 
 const meta = {
-  title: 'answer engine',
+  title: 'Freight Companion Search',
   description:
     'anwser engine built by developers digest',
 };
 export const metadata: Metadata = {
   ...meta,
   title: {
-    default: 'answer engine',
-    template: `%s - answer engine`,
+    default: 'Freight Companion Search',
+    template: `%s - Freight Companion Search`,
   },
   icons: {
     icon: '/favicon.ico',
