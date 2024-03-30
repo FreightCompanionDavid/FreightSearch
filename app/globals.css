@@ -9,7 +9,7 @@
     /* New theme colors based on the freightcompanionlogo.png */
     --dark-blueish: rgb(38, 49, 74);
     --light-grey: rgb(252, 252, 252);
-    --warm-beige: rgb(178, 156, 123);
+    --warm-beige: rgb(178, 156, 123); /* Added for outlines */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --muted: 240 4.8% 95.9%;
@@ -25,7 +25,7 @@
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --accent: 240 4.8% 95.9%;
-    --accent-foreground: ;
+    --accent-foreground: var(--warm-beige); /* Utilizing warm beige for outlines */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --ring: 240 5% 64.9%;
@@ -48,7 +48,7 @@
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
     --accent: 240 3.7% 15.9%;
-    --accent-foreground: ;
+    --accent-foreground: var(--warm-beige); /* Utilizing warm beige for outlines in dark mode */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
     --ring: 240 3.7% 15.9%;
@@ -58,6 +58,7 @@
 @layer base {
   * {
     @apply border-border;
+    border-color: var(--warm-beige); /* Applying warm beige as the outline color */
   }
   body {
     @apply bg-background text-foreground;
